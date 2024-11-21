@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - 张二拾的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- 添加FontAwesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">张二拾</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="portfolio.html" class="active">作品集</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li><a href="contact.html">联系我</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="portfolio-container">
+        <h1>项目作品集</h1>
+        
+        <!-- 项目分类标签 -->
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="web">Web开发</button>
+            <button class="filter-btn" data-filter="algorithm">算法研究</button>
+            <button class="filter-btn" data-filter="ai">人工智能</button>
+        </div>
+
+        <!-- 项目展示区 -->
+        <div class="portfolio-grid">
+            <!-- 项目1 -->
+            <div class="portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <img src="images/demo1.png" alt="个人博客系统">
+                    <div class="portfolio-info">
+                        <h3>个人博客系统</h3>
+                        <p>基于Spring Boot和Vue.js开发的全栈博客系统，支持文章发布、评论和用户管理等功能。</p>
+                        <div class="tech-stack">
+                            <span>Spring Boot</span>
+                            <span>Vue.js</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn">查看详情</a>
+                            <a href="https://github.com/yourusername/project1" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目2 -->
+            <div class="portfolio-item" data-category="algorithm">
+                <div class="portfolio-card">
+                    <img src="images/demo2.png" alt="算法可视化平台">
+                    <div class="portfolio-info">
+                        <h3>算法可视化平台</h3>
+                        <p>一个交互式算法学习平台，通过动画演示帮助用户理解常见算法的工作原理。</p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span>
+                            <span>Canvas</span>
+                            <span>React</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn">查看详情</a>
+                            <a href="https://github.com/yourusername/project2" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目3 -->
+            <div class="portfolio-item" data-category="ai">
+                <div class="portfolio-card">
+                    <img src="images/demo3.png" alt="图像识别应用">
+                    <div class="portfolio-info">
+                        <h3>图像识别应用</h3>
+                        <p>基于深度学习的图像识别系统，可以识别并分类不同类型的图像。</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn">查看详情</a>
+                            <a href="https://github.com/yourusername/project3" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目4 -->
+            <div class="portfolio-item" data-category="web">
+                <div class="portfolio-card">
+                    <img src="images/demo4.png" alt="在线学习平台">
+                    <div class="portfolio-info">
+                        <h3>在线学习平台</h3>
+                        <p>一个支持在线课程学习和视频播放的教育平台，包含用户管理和进度追踪功能。</p>
+                        <div class="tech-stack">
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>React</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn">查看详情</a>
+                            <a href="https://github.com/yourusername/project4" class="btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 张二拾. All rights reserved.</p>
+    </footer>
+
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客 - 张二拾的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">张二拾</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="portfolio.html">作品集</a></li>
+            <li><a href="blog.html" class="active">博客</a></li>
+            <li><a href="contact.html">联系我</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="blog-container">
+        <!-- 博客标题区 -->
+        <div class="blog-header">
+            <h1>技术博客</h1>
+            <p>分享我的学习笔记和技术心得</p>
+        </div>
+
+        <!-- 博客分类和搜索区 -->
+        <div class="blog-controls">
+            <div class="blog-categories">
+                <select id="category-filter">
+                    <option value="all">所有分类</option>
+                    <option value="programming">编程开发</option>
+                    <option value="algorithm">算法笔记</option>
+                    <option value="ai">人工智能</option>
+                    <option value="experience">学习心得</option>
+                </select>
+            </div>
+            <div class="blog-search">
+                <input type="text" placeholder="搜索文章...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- 博客文章列表 -->
+        <div class="blog-grid">
+            <!-- 文章1 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="images/demo1.jpg" alt="算法学习笔记">
+                    <div class="blog-category">算法笔记</div>
+                </div>
+                <div class="blog-content">
+                    <h2>动态规划算法详解与实践</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> 2024-03-15</span>
+                        <span><i class="far fa-clock"></i> 15分钟阅读</span>
+                    </div>
+                    <p>本文详细介绍了动态规划的基本概念、常见应用场景以及实际编程中的注意事项...</p>
+                    <a href="#" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- 文章2 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="images/demo2.jpg" alt="Web开发笔记">
+                    <div class="blog-category">编程开发</div>
+                </div>
+                <div class="blog-content">
+                    <h2>React Hooks 最佳实践指南</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> 2024-03-10</span>
+                        <span><i class="far fa-clock"></i> 10分钟阅读</span>
+                    </div>
+                    <p>深入探讨React Hooks的使用技巧，包括useState、useEffect的常见陷阱及解决方案...</p>
+                    <a href="#" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- 文章3 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="images/demo3.jpg" alt="AI学习笔记">
+                    <div class="blog-category">人工智能</div>
+                </div>
+                <div class="blog-content">
+                    <h2>机器学习模型优化技巧</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> 2024-03-05</span>
+                        <span><i class="far fa-clock"></i> 20分钟阅读</span>
+                    </div>
+                    <p>分享在实际项目中提升机器学习模型性能的经验，包括特征工程、参数调优等...</p>
+                    <a href="#" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- 文章4 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="images/demo4.jpg" alt="学习心得">
+                    <div class="blog-category">学习心得</div>
+                </div>
+                <div class="blog-content">
+                    <h2>我的编程学习方法论</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> 2024-03-01</span>
+                        <span><i class="far fa-clock"></i> 8分钟阅读</span>
+                    </div>
+                    <p>总结在南京大学学习计算机专业的经验，分享如何更高效地学习编程知识...</p>
+                    <a href="#" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <!-- 分页控件 -->
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">10</a>
+            <a href="#" class="next">下一页 <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 张二拾. All rights reserved.</p>
+    </footer>
+</body>
+</html>

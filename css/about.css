@@ -1,0 +1,129 @@
+/* 主容器样式 */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* 通用部分样式 */
+section {
+    margin-bottom: 3rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+}
+
+/* 个人简介部分 */
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* 教育背景部分 */
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+.education-item h3 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.duration {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.achievements {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.achievements li {
+    margin-bottom: 0.5rem;
+}
+
+/* 技能部分 */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* 兴趣爱好部分 */
+.interests-content ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.interests-content li {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
